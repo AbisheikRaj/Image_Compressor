@@ -32,7 +32,7 @@ export class ImageCompressor extends React.Component {
         e.preventDefault(); // prevent default selection
 
         const option = {
-            maxSizeMB: 1024,
+            maxSizeMB: 1,
             maxWidthOrHeight: 1920,
             useWebWorker : true // optional
         };
