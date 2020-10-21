@@ -28,15 +28,11 @@ export class ImageCompressor extends React.Component {
         //console.log(this.state);
     };
 
-    changeValue = (e) => {
-        this.setState({ [e.target.name] : e.target.value})
-    };
-
     click = (e) => {
         e.preventDefault(); // prevent default selection
 
         const option = {
-            maxSizeMB: 1,
+            maxSizeMB: 1024,
             maxWidthOrHeight: 1920,
             useWebWorker : true // optional
         };
